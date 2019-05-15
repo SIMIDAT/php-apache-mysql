@@ -1,24 +1,34 @@
 Los ficheros que posibilitan la captura y almacenamiento de datos, así como poder visualizarlos y descargarlos a través de la aplicación web se encuentran en el directorio home/gquesada/php-apache-mysql del servidor simidat-apps.ujaen.es. En él se encuentran los archivos:
 
+
 •	_env: con variables de entorno.
+
 •	docker-compose.yml: archivo que define servicios, redes y volúmenes.
+
 •	predicciones.sql: copia de seguridad de la base de datos.
+
 •	sudo.sh: fichero llamado por el crontab cada tres horas que activa el servicio Docker de captura y almacenamiento de datos, descarga los datos en bruto y realiza la copia de seguridad de la base de datos.
+
 
 También se encuentran los directorios: apache, app, public_html.
 
 a)	apache
 
+
 Contiene los ficheros:
+
 
 •	demo.apache.conf: archivo de configuración de apache.
 
 •	Dockerfile: descarga e instala php y apache en el Docker.
 
 
+
 b)	app
 
+
 Presenta el directorio Brutos con los datos en formato JSON descargados de las distintas fuentes de datos. Además, presenta los siguientes ficheros:
+
 
 •	DescargaACCUWEATHER: captura y almacena los datos de Accuweather.
 
@@ -33,9 +43,12 @@ Presenta el directorio Brutos con los datos en formato JSON descargados de las d
 •	requirements: librerías necesarias para poder ejecutar los scripts de Python anteriores.
 
 
+
 c)	public_html
 
+
 En él se encuentra la carpeta assets con todos los recursos css, imágenes, archivos de JavaScript, etc. También se encuentran tres archivos php:
+
 
 •	index.php: interfaz principal de la web con el formulario de selección de la fuente, las variables, fechas, horizontes de predicción y botones de descarga y visualización.
 
