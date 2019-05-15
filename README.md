@@ -1,11 +1,8 @@
 Los ficheros que posibilitan la captura y almacenamiento de datos, así como poder visualizarlos y descargarlos a través de la aplicación web se encuentran en el directorio home/gquesada/php-apache-mysql del servidor simidat-apps.ujaen.es. En él se encuentran los archivos:
 
 •	_env: con variables de entorno.
-
 •	docker-compose.yml: archivo que define servicios, redes y volúmenes.
-
 •	predicciones.sql: copia de seguridad de la base de datos.
-
 •	sudo.sh: fichero llamado por el crontab cada tres horas que activa el servicio Docker de captura y almacenamiento de datos, descarga los datos en bruto y realiza la copia de seguridad de la base de datos.
 
 También se encuentran los directorios: apache, app, public_html.
