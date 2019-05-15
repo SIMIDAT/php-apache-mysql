@@ -1,0 +1,12 @@
+html, body {margin:0;width:100%;height:100%}
+#toolbar {width:100%;background:#2D2D2D;height:24px}
+ul#list-nav {list-style:none;margin:0;padding:0;width:100%}
+ul#list-nav li {text-decoration:none;height:24px;color:#888;float:left;text-align:center}
+ul#list-nav li a {text-decoration:none;padding:5px 10px;color:#CCC;float:left;text-align:center}
+ul#list-nav li a:hover {background:#4C4C4C}
+body, table, td, th, ul, ol, textarea, input {font-size:12px;font-family:verdana,helvetica,arial,sans-serif}
+table th {background-color:#E5EECC;border:1px solid #C3C3C3;padding:3px;vertical-align:top;white-space: nowrap}
+table td {white-space:nowrap}
+table {background-color:white;border: 1px solid #808080;border-collapse:collapse}
+fieldset {margin: 2em;display: inline}
+#shoutbox {float: right; width: 250px;}

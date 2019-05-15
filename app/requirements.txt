@@ -1,0 +1,6 @@
+requests
+pandas
+datetime
+sqlalchemy
+mysql-python
+xmljson

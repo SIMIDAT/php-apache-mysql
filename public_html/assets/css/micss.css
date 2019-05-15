@@ -1,0 +1,60 @@
+.espacio5{
+	margin-bottom: 5px;
+}
+.espacio10{
+	margin-bottom: 10px;
+}
+.espacio20{
+	margin-bottom: 20px;
+}
+.espacio30{
+	margin-bottom: 30px;
+}
+.textorojo{
+	color: red;
+}
+.textoinvisible{
+    display: none;
+}
+.container-background{
+	border-radius: 15px;
+    background-color: aliceblue;
+    padding-top: 15px;
+}
+.form-padding{
+	padding: 20px;
+}
+table.rayada{
+	font-family: verdana, arial, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	border-width: 1px;
+	border-color: #3A3A3A;
+	border-collapse: collapse;
+}
+table.rayada th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #517994;
+	background-color: #164b5b;
+	color: #ffffff;
+}
+table.rayada tr:hover td {
+	cursor: pointer;
+}
+table.rayada tr:nth-child(even) td{
+	background-color: #eef4f6;
+}
+table.rayada td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #517994;
+	background-color: #ffffff;
+}
+
+table.dataTable tbody th,
+table.dataTable tbody td {
+    white-space: nowrap;
+}

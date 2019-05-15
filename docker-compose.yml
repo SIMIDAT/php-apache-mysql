@@ -1,0 +1,44 @@
+version: "3.2"
+services:
+  apache:
+    build:
+      context: './apache/'
+    depends_on:
+      - mariadb
+    networks:
+      - frontend
+      - backend
+    ports:
+      - "8080:80"
+    volumes:
+       - ./public_html/:/var/www/html/
+    container_name: apache
+  app:
+    build:
+      context: './app/'
+    depends_on:
+      - mariadb
+    networks:
+      - frontend
+      - backend
+    volumes:
+      - ./public_html/:/var/www/html/
+    container_name: app
+  mariadb:
+    image: mariadb:${MARIADB_VERSION:-latest}
+    restart: always
+    ports:
+      - "33066:3306"
+    volumes:
+            - data:/var/lib/mariadb
+            - ./predicciones.sql:/docker-entrypoint-initdb.d/predicciones.sql
+    networks:
+      - backend
+    environment:
+      MYSQL_ROOT_PASSWORD: "rootpassword"
+    container_name: mariadb    
+networks:
+  frontend:
+  backend:
+volumes:
+    data:
