@@ -80,7 +80,7 @@ tablaTIEMPO = tablaTIEMPO[cols]
 ## Creación de tablas e introducción de datos en SQL
 
 # Conexión a la base de datos
-engine = create_engine("mysql+mysqldb://root:rootpassword@mariadb:3306/predicciones")
+engine = create_engine("mysql+mysqldb://root:$PASSWORD@mariadb:3306/predicciones")
 try:
     # Creación de tabla SQL
     tablaTIEMPO.to_sql(con=engine, name='tiempo', if_exists='append', index = False)
