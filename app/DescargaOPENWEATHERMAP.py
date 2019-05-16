@@ -155,7 +155,7 @@ tablaOPEN = tablaOPEN.drop(['index'], axis = 1)
 
 if (tablaOPEN['fechaPrediccion'][0][-2:] in ('00', '06', '12', '18')):
     # Conexión a la base de datos
-    engine = create_engine("mysql+mysqldb://root:rootpassword@mariadb:3306/predicciones")
+    engine = create_engine("mysql+mysqldb://root:$PASSWORD@mariadb:3306/predicciones")
     try:
         # Creación de tabla SQL
         tablaOPEN.to_sql(con=engine, name='open', if_exists='append', index = False)
