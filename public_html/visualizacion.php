@@ -1,7 +1,6 @@
 <?php
 	$servername = "mariadb";
 	$username = "root";
-	$password = "rootpassword";
 	$database = "predicciones";
 
 	$conn = new mysqli($servername, $username, $password, $database);
