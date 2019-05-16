@@ -200,7 +200,7 @@ tablaAEMET = tablaAEMET[cols]
 ## Creación de tablas e introducción de datos en SQL
 
 # Conexión a la base de datos
-engine = create_engine("mysql+mysqldb://root:rootpassword@mariadb/predicciones")
+engine = create_engine("mysql+mysqldb://root:$PASSWORD@mariadb/predicciones")
 try:
     tablaAEMET.to_sql(con=engine, name='aemet', if_exists='append', index = False)
 except:
