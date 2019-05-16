@@ -97,7 +97,7 @@ tablaACCU = tablaACCU[cols]
 
 if (tablaACCU['fechaPrediccion'][0][-2:] in ('01', '07', '13', '19')):
 	# Conexión a la base de datos
-	engine = create_engine("mysql+mysqldb://root:rootpassword@mariadb:3306/predicciones")
+	engine = create_engine("mysql+mysqldb://root:$PASSWORD@mariadb:3306/predicciones")
 	try:
   	# Creación de tabla SQL
   		tablaACCU.to_sql(con=engine, name='accuweather', if_exists='append', index = False)
